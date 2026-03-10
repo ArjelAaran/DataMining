@@ -383,7 +383,7 @@ def analyze_iteration(
     )
     rules["rankingScore"] = (
         rules["score"]
-        + rules["collectorThemeEligible"].astype(float) * 0.02
+        + rules["collectorThemeEligible"].astype(float) * 0.005
     )
 
     # ── Step 10: Select top 3 rules ───────────────────────────────────────

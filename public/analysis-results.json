@@ -1,0 +1,497 @@
+{
+  "generatedAt": "2026-03-10T05:03:14.202496+00:00",
+  "source": "local.data/transactions.json",
+  "iterations": [
+    {
+      "name": "Iteration 1: Early Launch Phase",
+      "range": {
+        "min_id": 1,
+        "max_id": 500
+      },
+      "transactionCount": 500,
+      "rawRowCount": 1732,
+      "autoSupport": 0.04,
+      "stabilitySupport": 0.08,
+      "topRules": [
+        {
+          "rank": 1,
+          "antecedentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "consequentItems": [
+            "Pikachu Plushie"
+          ],
+          "antecedent": "Booster Pack (Scarlet & Violet)",
+          "consequent": "Pikachu Plushie",
+          "support": 0.674,
+          "confidence": 0.9182561307901907,
+          "lift": 1.2408866632299875,
+          "leverage": 0.13084000000000007,
+          "conviction": 3.180666666666667,
+          "score": 0.8850797849620738,
+          "promoCode": "POKEPIKA124",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Booster Pack (Scarlet & Violet)=>Pikachu Plushie"
+        },
+        {
+          "rank": 2,
+          "antecedentItems": [
+            "Booster Pack (Scarlet & Violet)",
+            "Pokemon Advent Calendar"
+          ],
+          "consequentItems": [
+            "Pikachu Plushie"
+          ],
+          "antecedent": "Booster Pack (Scarlet & Violet), Pokemon Advent Calendar",
+          "consequent": "Pikachu Plushie",
+          "support": 0.084,
+          "confidence": 0.9545454545454546,
+          "lift": 1.28992628992629,
+          "leverage": 0.018880000000000008,
+          "conviction": 5.720000000000005,
+          "score": 0.6734034398034399,
+          "promoCode": "POKEPIKA129",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Booster Pack (Scarlet & Violet)|Pokemon Advent Calendar=>Pikachu Plushie"
+        },
+        {
+          "rank": 3,
+          "antecedentItems": [
+            "Booster Pack (Scarlet & Violet)",
+            "Gengar Night Light"
+          ],
+          "consequentItems": [
+            "Pikachu Plushie"
+          ],
+          "antecedent": "Booster Pack (Scarlet & Violet), Gengar Night Light",
+          "consequent": "Pikachu Plushie",
+          "support": 0.096,
+          "confidence": 0.9230769230769231,
+          "lift": 1.2474012474012475,
+          "leverage": 0.01904,
+          "conviction": 3.3800000000000026,
+          "score": 0.6571110187110187,
+          "promoCode": "POKEPIKA125",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Booster Pack (Scarlet & Violet)|Gengar Night Light=>Pikachu Plushie"
+        }
+      ],
+      "driftDetected": false,
+      "previousTopRuleSignature": null,
+      "currentTopRuleSignature": "Booster Pack (Scarlet & Violet)=>Pikachu Plushie"
+    },
+    {
+      "name": "Iteration 2: Mid-Season Update",
+      "range": {
+        "min_id": 1,
+        "max_id": 1000
+      },
+      "transactionCount": 1000,
+      "rawRowCount": 3468,
+      "autoSupport": 0.02,
+      "stabilitySupport": 0.04,
+      "topRules": [
+        {
+          "rank": 1,
+          "antecedentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "consequentItems": [
+            "Pikachu Plushie"
+          ],
+          "antecedent": "Booster Pack (Scarlet & Violet)",
+          "consequent": "Pikachu Plushie",
+          "support": 0.655,
+          "confidence": 0.9122562674094707,
+          "lift": 1.2600224687976116,
+          "leverage": 0.13516800000000007,
+          "conviction": 3.1455238095238096,
+          "score": 0.8789070007233106,
+          "promoCode": "POKEPIKA126",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Booster Pack (Scarlet & Violet)=>Pikachu Plushie"
+        },
+        {
+          "rank": 2,
+          "antecedentItems": [
+            "Bulbasaur Succulent Planter",
+            "Pikachu Plushie"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Bulbasaur Succulent Planter, Pikachu Plushie",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.082,
+          "confidence": 0.9111111111111111,
+          "lift": 1.268956979263386,
+          "leverage": 0.017380000000000007,
+          "conviction": 3.1725,
+          "score": 0.6510358402971217,
+          "promoCode": "POKEBOOS127",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Bulbasaur Succulent Planter|Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+        },
+        {
+          "rank": 3,
+          "antecedentItems": [
+            "Booster Pack (Scarlet & Violet)",
+            "Gengar Night Light"
+          ],
+          "consequentItems": [
+            "Pikachu Plushie"
+          ],
+          "antecedent": "Booster Pack (Scarlet & Violet), Gengar Night Light",
+          "consequent": "Pikachu Plushie",
+          "support": 0.075,
+          "confidence": 0.9146341463414634,
+          "lift": 1.2633068319633474,
+          "leverage": 0.015632,
+          "conviction": 3.233142857142859,
+          "score": 0.6485150249292548,
+          "promoCode": "POKEPIKA126",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Booster Pack (Scarlet & Violet)|Gengar Night Light=>Pikachu Plushie"
+        }
+      ],
+      "driftDetected": false,
+      "previousTopRuleSignature": "Booster Pack (Scarlet & Violet)=>Pikachu Plushie",
+      "currentTopRuleSignature": "Booster Pack (Scarlet & Violet)=>Pikachu Plushie"
+    },
+    {
+      "name": "Iteration 3: Full Holiday Trend",
+      "range": {
+        "min_id": 1,
+        "max_id": 2000
+      },
+      "transactionCount": 2000,
+      "rawRowCount": 6982,
+      "autoSupport": 0.01,
+      "stabilitySupport": 0.02,
+      "topRules": [
+        {
+          "rank": 1,
+          "antecedentItems": [
+            "Pokedex Notebook"
+          ],
+          "consequentItems": [
+            "Pikachu Hoodie"
+          ],
+          "antecedent": "Pokedex Notebook",
+          "consequent": "Pikachu Hoodie",
+          "support": 0.469,
+          "confidence": 0.8701298701298701,
+          "lift": 1.5820543093270365,
+          "leverage": 0.17254999999999993,
+          "conviction": 3.4649999999999985,
+          "score": 0.8520628099173554,
+          "promoCode": "POKEPIKA158",
+          "promoDiscount": 20,
+          "collectorThemeEligible": false,
+          "highlyStable": true,
+          "ruleSignature": "Pokedex Notebook=>Pikachu Hoodie"
+        },
+        {
+          "rank": 2,
+          "antecedentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "consequentItems": [
+            "Pikachu Plushie"
+          ],
+          "antecedent": "Booster Pack (Scarlet & Violet)",
+          "consequent": "Pikachu Plushie",
+          "support": 0.336,
+          "confidence": 0.8086642599277978,
+          "lift": 1.86328170490276,
+          "leverage": 0.15567300000000003,
+          "conviction": 2.958150943396226,
+          "score": 0.8305220449516711,
+          "promoCode": "POKEPIKA186",
+          "promoDiscount": 20,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Booster Pack (Scarlet & Violet)=>Pikachu Plushie"
+        },
+        {
+          "rank": 3,
+          "antecedentItems": [
+            "Bulbasaur Succulent Planter",
+            "Pikachu Plushie"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Bulbasaur Succulent Planter, Pikachu Plushie",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.042,
+          "confidence": 0.8076923076923077,
+          "lift": 1.9439044709802833,
+          "leverage": 0.020394000000000006,
+          "conviction": 3.0394000000000005,
+          "score": 0.7286578172729797,
+          "promoCode": "POKEBOOS194",
+          "promoDiscount": 20,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Bulbasaur Succulent Planter|Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+        }
+      ],
+      "driftDetected": true,
+      "previousTopRuleSignature": "Booster Pack (Scarlet & Violet)=>Pikachu Plushie",
+      "currentTopRuleSignature": "Pokedex Notebook=>Pikachu Hoodie"
+    }
+  ],
+  "modelHistory": {
+    "iteration_1": {
+      "name": "Iteration 1: Early Launch Phase",
+      "range": {
+        "min_id": 1,
+        "max_id": 500
+      },
+      "topRules": [
+        {
+          "rank": 1,
+          "antecedentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "consequentItems": [
+            "Pikachu Plushie"
+          ],
+          "antecedent": "Booster Pack (Scarlet & Violet)",
+          "consequent": "Pikachu Plushie",
+          "support": 0.674,
+          "confidence": 0.9182561307901907,
+          "lift": 1.2408866632299875,
+          "leverage": 0.13084000000000007,
+          "conviction": 3.180666666666667,
+          "score": 0.8850797849620738,
+          "promoCode": "POKEPIKA124",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Booster Pack (Scarlet & Violet)=>Pikachu Plushie"
+        },
+        {
+          "rank": 2,
+          "antecedentItems": [
+            "Booster Pack (Scarlet & Violet)",
+            "Pokemon Advent Calendar"
+          ],
+          "consequentItems": [
+            "Pikachu Plushie"
+          ],
+          "antecedent": "Booster Pack (Scarlet & Violet), Pokemon Advent Calendar",
+          "consequent": "Pikachu Plushie",
+          "support": 0.084,
+          "confidence": 0.9545454545454546,
+          "lift": 1.28992628992629,
+          "leverage": 0.018880000000000008,
+          "conviction": 5.720000000000005,
+          "score": 0.6734034398034399,
+          "promoCode": "POKEPIKA129",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Booster Pack (Scarlet & Violet)|Pokemon Advent Calendar=>Pikachu Plushie"
+        },
+        {
+          "rank": 3,
+          "antecedentItems": [
+            "Booster Pack (Scarlet & Violet)",
+            "Gengar Night Light"
+          ],
+          "consequentItems": [
+            "Pikachu Plushie"
+          ],
+          "antecedent": "Booster Pack (Scarlet & Violet), Gengar Night Light",
+          "consequent": "Pikachu Plushie",
+          "support": 0.096,
+          "confidence": 0.9230769230769231,
+          "lift": 1.2474012474012475,
+          "leverage": 0.01904,
+          "conviction": 3.3800000000000026,
+          "score": 0.6571110187110187,
+          "promoCode": "POKEPIKA125",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Booster Pack (Scarlet & Violet)|Gengar Night Light=>Pikachu Plushie"
+        }
+      ],
+      "topRuleSignature": "Booster Pack (Scarlet & Violet)=>Pikachu Plushie"
+    },
+    "iteration_2": {
+      "name": "Iteration 2: Mid-Season Update",
+      "range": {
+        "min_id": 1,
+        "max_id": 1000
+      },
+      "topRules": [
+        {
+          "rank": 1,
+          "antecedentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "consequentItems": [
+            "Pikachu Plushie"
+          ],
+          "antecedent": "Booster Pack (Scarlet & Violet)",
+          "consequent": "Pikachu Plushie",
+          "support": 0.655,
+          "confidence": 0.9122562674094707,
+          "lift": 1.2600224687976116,
+          "leverage": 0.13516800000000007,
+          "conviction": 3.1455238095238096,
+          "score": 0.8789070007233106,
+          "promoCode": "POKEPIKA126",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Booster Pack (Scarlet & Violet)=>Pikachu Plushie"
+        },
+        {
+          "rank": 2,
+          "antecedentItems": [
+            "Bulbasaur Succulent Planter",
+            "Pikachu Plushie"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Bulbasaur Succulent Planter, Pikachu Plushie",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.082,
+          "confidence": 0.9111111111111111,
+          "lift": 1.268956979263386,
+          "leverage": 0.017380000000000007,
+          "conviction": 3.1725,
+          "score": 0.6510358402971217,
+          "promoCode": "POKEBOOS127",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Bulbasaur Succulent Planter|Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+        },
+        {
+          "rank": 3,
+          "antecedentItems": [
+            "Booster Pack (Scarlet & Violet)",
+            "Gengar Night Light"
+          ],
+          "consequentItems": [
+            "Pikachu Plushie"
+          ],
+          "antecedent": "Booster Pack (Scarlet & Violet), Gengar Night Light",
+          "consequent": "Pikachu Plushie",
+          "support": 0.075,
+          "confidence": 0.9146341463414634,
+          "lift": 1.2633068319633474,
+          "leverage": 0.015632,
+          "conviction": 3.233142857142859,
+          "score": 0.6485150249292548,
+          "promoCode": "POKEPIKA126",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Booster Pack (Scarlet & Violet)|Gengar Night Light=>Pikachu Plushie"
+        }
+      ],
+      "topRuleSignature": "Booster Pack (Scarlet & Violet)=>Pikachu Plushie"
+    },
+    "iteration_3": {
+      "name": "Iteration 3: Full Holiday Trend",
+      "range": {
+        "min_id": 1,
+        "max_id": 2000
+      },
+      "topRules": [
+        {
+          "rank": 1,
+          "antecedentItems": [
+            "Pokedex Notebook"
+          ],
+          "consequentItems": [
+            "Pikachu Hoodie"
+          ],
+          "antecedent": "Pokedex Notebook",
+          "consequent": "Pikachu Hoodie",
+          "support": 0.469,
+          "confidence": 0.8701298701298701,
+          "lift": 1.5820543093270365,
+          "leverage": 0.17254999999999993,
+          "conviction": 3.4649999999999985,
+          "score": 0.8520628099173554,
+          "promoCode": "POKEPIKA158",
+          "promoDiscount": 20,
+          "collectorThemeEligible": false,
+          "highlyStable": true,
+          "ruleSignature": "Pokedex Notebook=>Pikachu Hoodie"
+        },
+        {
+          "rank": 2,
+          "antecedentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "consequentItems": [
+            "Pikachu Plushie"
+          ],
+          "antecedent": "Booster Pack (Scarlet & Violet)",
+          "consequent": "Pikachu Plushie",
+          "support": 0.336,
+          "confidence": 0.8086642599277978,
+          "lift": 1.86328170490276,
+          "leverage": 0.15567300000000003,
+          "conviction": 2.958150943396226,
+          "score": 0.8305220449516711,
+          "promoCode": "POKEPIKA186",
+          "promoDiscount": 20,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Booster Pack (Scarlet & Violet)=>Pikachu Plushie"
+        },
+        {
+          "rank": 3,
+          "antecedentItems": [
+            "Bulbasaur Succulent Planter",
+            "Pikachu Plushie"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Bulbasaur Succulent Planter, Pikachu Plushie",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.042,
+          "confidence": 0.8076923076923077,
+          "lift": 1.9439044709802833,
+          "leverage": 0.020394000000000006,
+          "conviction": 3.0394000000000005,
+          "score": 0.7286578172729797,
+          "promoCode": "POKEBOOS194",
+          "promoDiscount": 20,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Bulbasaur Succulent Planter|Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+        }
+      ],
+      "topRuleSignature": "Pokedex Notebook=>Pikachu Hoodie"
+    }
+  },
+  "comparisonIteration1Vs3": {
+    "iteration1TopRule": "Booster Pack (Scarlet & Violet)=>Pikachu Plushie",
+    "iteration3TopRule": "Pokedex Notebook=>Pikachu Hoodie",
+    "topRuleChanged": true
+  }
+}

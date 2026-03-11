@@ -35,7 +35,7 @@ def generate_transactions(start_id: int, end_id: int, dataset_type: str = "A") -
         current_basket: List[str] = []
 
         if dataset_type == "A":
-            if random.random() < 0.65:
+            if random.random() < 0.60:
                 current_basket.extend(
                     ["Pikachu Plushie", "Booster Pack (Scarlet & Violet)"]
                     # ["Genger Night Light", "Pokemon Advent Calendar"]

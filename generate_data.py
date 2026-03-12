@@ -4,10 +4,11 @@ from pathlib import Path
 from typing import List, Dict
 TOTAL_TRANSACTIONS = 2000
 DATASET_A_END = 1000
-DATASET_A_SEED_RATE = 0.65
+DATASET_A_SEED_RATE = 0.60
 DATASET_B_SEED_RATE = 0.90
 DATASET_A_SEED_PAIR = ["Pikachu Plushie", "Booster Pack (Scarlet & Violet)"]
 DATASET_B_SEED_PAIR = ["Pikachu Hoodie", "Pokedex Notebook"]
+#DATASET_B_SEED_PAIR = ["Gengar Night Light", "Pokemon Advent Calendar"]
 BASKET_SIZE_MIN = 2
 BASKET_SIZE_MAX = 5
 ITEMS = [

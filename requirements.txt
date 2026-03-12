@@ -1,2 +1,0 @@
-mlxtend>=0.23.0
-pandas>=2.0.0

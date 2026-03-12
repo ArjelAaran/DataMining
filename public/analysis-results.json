@@ -1,0 +1,521 @@
+{
+  "generatedAt": "2026-03-12T07:22:58.829791+00:00",
+  "source": "local.data/transactions.json",
+  "engineConfig": {
+    "weights": {
+      "support": 0.4,
+      "confidence": 0.4,
+      "lift": 0.2
+    },
+    "supportThresholds": {
+      "small": 0.04,
+      "medium": 0.02,
+      "large": 0.01
+    },
+    "sizeThresholds": {
+      "small": 500,
+      "medium": 1000
+    },
+    "minLift": 1.0,
+    "collectorBias": 0.005,
+    "promoHighLift": 1.5,
+    "promoHighDiscount": 20,
+    "promoLowDiscount": 10,
+    "topNRules": 3
+  },
+  "iterations": [
+    {
+      "name": "Iteration 1: Early Launch Phase",
+      "range": {
+        "min_id": 1,
+        "max_id": 500
+      },
+      "transactionCount": 500,
+      "rawRowCount": 1718,
+      "autoSupport": 0.04,
+      "stabilitySupport": 0.08,
+      "topRules": [
+        {
+          "rank": 1,
+          "antecedentItems": [
+            "Pikachu Plushie"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Pikachu Plushie",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.67,
+          "confidence": 0.9029649595687331,
+          "lift": 1.2335586879354279,
+          "leverage": 0.12685600000000008,
+          "conviction": 2.761888888888888,
+          "score": 0.8758977214145789,
+          "promoCode": "POKEBOOS123",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+        },
+        {
+          "rank": 2,
+          "antecedentItems": [
+            "Booster Pack (Scarlet & Violet)",
+            "Elite Trainer Box"
+          ],
+          "consequentItems": [
+            "Pikachu Plushie"
+          ],
+          "antecedent": "Booster Pack (Scarlet & Violet), Elite Trainer Box",
+          "consequent": "Pikachu Plushie",
+          "support": 0.06,
+          "confidence": 0.9375,
+          "lift": 1.263477088948787,
+          "leverage": 0.012511999999999995,
+          "conviction": 4.128,
+          "score": 0.6516954177897574,
+          "promoCode": "POKEPIKA126",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": false,
+          "ruleSignature": "Booster Pack (Scarlet & Violet)|Elite Trainer Box=>Pikachu Plushie"
+        },
+        {
+          "rank": 3,
+          "antecedentItems": [
+            "Pikachu Plushie",
+            "Pokedex Notebook"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Pikachu Plushie, Pokedex Notebook",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.08,
+          "confidence": 0.9090909090909091,
+          "lift": 1.241927471435668,
+          "leverage": 0.015584,
+          "conviction": 2.947999999999999,
+          "score": 0.6440218579234973,
+          "promoCode": "POKEBOOS124",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Pikachu Plushie|Pokedex Notebook=>Booster Pack (Scarlet & Violet)"
+        }
+      ],
+      "driftDetected": false,
+      "previousTopRuleSignature": null,
+      "currentTopRuleSignature": "Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+    },
+    {
+      "name": "Iteration 2: Mid-Season Update",
+      "range": {
+        "min_id": 1,
+        "max_id": 1000
+      },
+      "transactionCount": 1000,
+      "rawRowCount": 3476,
+      "autoSupport": 0.02,
+      "stabilitySupport": 0.04,
+      "topRules": [
+        {
+          "rank": 1,
+          "antecedentItems": [
+            "Pikachu Plushie"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Pikachu Plushie",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.674,
+          "confidence": 0.9010695187165776,
+          "lift": 1.2209614074750375,
+          "leverage": 0.12197600000000008,
+          "conviction": 2.6483243243243257,
+          "score": 0.8742200889816385,
+          "promoCode": "POKEBOOS122",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+        },
+        {
+          "rank": 2,
+          "antecedentItems": [
+            "Pikachu Plushie",
+            "Pokedex Notebook"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Pikachu Plushie, Pokedex Notebook",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.081,
+          "confidence": 0.8901098901098901,
+          "lift": 1.206110962208523,
+          "leverage": 0.013842000000000007,
+          "conviction": 2.384199999999999,
+          "score": 0.6296661484856607,
+          "promoCode": "POKEBOOS121",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Pikachu Plushie|Pokedex Notebook=>Booster Pack (Scarlet & Violet)"
+        },
+        {
+          "rank": 3,
+          "antecedentItems": [
+            "Bulbasaur Succulent Planter",
+            "Pikachu Plushie"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Bulbasaur Succulent Planter, Pikachu Plushie",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.095,
+          "confidence": 0.8796296296296297,
+          "lift": 1.1919100672488208,
+          "leverage": 0.015296000000000004,
+          "conviction": 2.1766153846153853,
+          "score": 0.6282338653016161,
+          "promoCode": "POKEBOOS119",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Bulbasaur Succulent Planter|Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+        }
+      ],
+      "driftDetected": false,
+      "previousTopRuleSignature": "Pikachu Plushie=>Booster Pack (Scarlet & Violet)",
+      "currentTopRuleSignature": "Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+    },
+    {
+      "name": "Iteration 3: Full Holiday Trend",
+      "range": {
+        "min_id": 1,
+        "max_id": 2000
+      },
+      "transactionCount": 2000,
+      "rawRowCount": 7015,
+      "autoSupport": 0.01,
+      "stabilitySupport": 0.02,
+      "topRules": [
+        {
+          "rank": 1,
+          "antecedentItems": [
+            "Pokedex Notebook"
+          ],
+          "consequentItems": [
+            "Pikachu Hoodie"
+          ],
+          "antecedent": "Pokedex Notebook",
+          "consequent": "Pikachu Hoodie",
+          "support": 0.474,
+          "confidence": 0.8626023657870792,
+          "lift": 1.5712247099946797,
+          "leverage": 0.17232449999999994,
+          "conviction": 3.282443708609271,
+          "score": 0.8488858883137675,
+          "promoCode": "POKEPIKA157",
+          "promoDiscount": 20,
+          "collectorThemeEligible": false,
+          "highlyStable": true,
+          "ruleSignature": "Pokedex Notebook=>Pikachu Hoodie"
+        },
+        {
+          "rank": 2,
+          "antecedentItems": [
+            "Pikachu Plushie"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Pikachu Plushie",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.3425,
+          "confidence": 0.7837528604118993,
+          "lift": 1.8100527954085435,
+          "leverage": 0.15327900000000003,
+          "conviction": 2.6219999999999994,
+          "score": 0.8125117032464684,
+          "promoCode": "POKEBOOS181",
+          "promoDiscount": 20,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+        },
+        {
+          "rank": 3,
+          "antecedentItems": [
+            "Graded Charizard Card",
+            "Poke Ball Pen Set",
+            "Pokedex Notebook"
+          ],
+          "consequentItems": [
+            "Pikachu Hoodie"
+          ],
+          "antecedent": "Graded Charizard Card, Poke Ball Pen Set, Pokedex Notebook",
+          "consequent": "Pikachu Hoodie",
+          "support": 0.0105,
+          "confidence": 0.9545454545454546,
+          "lift": 1.7386984600099353,
+          "leverage": 0.0044610000000000006,
+          "conviction": 9.922000000000008,
+          "score": 0.7337578738201689,
+          "promoCode": "POKEPIKA174",
+          "promoDiscount": 20,
+          "collectorThemeEligible": true,
+          "highlyStable": false,
+          "ruleSignature": "Graded Charizard Card|Poke Ball Pen Set|Pokedex Notebook=>Pikachu Hoodie"
+        }
+      ],
+      "driftDetected": true,
+      "previousTopRuleSignature": "Pikachu Plushie=>Booster Pack (Scarlet & Violet)",
+      "currentTopRuleSignature": "Pokedex Notebook=>Pikachu Hoodie"
+    }
+  ],
+  "modelHistory": {
+    "iteration_1": {
+      "name": "Iteration 1: Early Launch Phase",
+      "range": {
+        "min_id": 1,
+        "max_id": 500
+      },
+      "topRules": [
+        {
+          "rank": 1,
+          "antecedentItems": [
+            "Pikachu Plushie"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Pikachu Plushie",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.67,
+          "confidence": 0.9029649595687331,
+          "lift": 1.2335586879354279,
+          "leverage": 0.12685600000000008,
+          "conviction": 2.761888888888888,
+          "score": 0.8758977214145789,
+          "promoCode": "POKEBOOS123",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+        },
+        {
+          "rank": 2,
+          "antecedentItems": [
+            "Booster Pack (Scarlet & Violet)",
+            "Elite Trainer Box"
+          ],
+          "consequentItems": [
+            "Pikachu Plushie"
+          ],
+          "antecedent": "Booster Pack (Scarlet & Violet), Elite Trainer Box",
+          "consequent": "Pikachu Plushie",
+          "support": 0.06,
+          "confidence": 0.9375,
+          "lift": 1.263477088948787,
+          "leverage": 0.012511999999999995,
+          "conviction": 4.128,
+          "score": 0.6516954177897574,
+          "promoCode": "POKEPIKA126",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": false,
+          "ruleSignature": "Booster Pack (Scarlet & Violet)|Elite Trainer Box=>Pikachu Plushie"
+        },
+        {
+          "rank": 3,
+          "antecedentItems": [
+            "Pikachu Plushie",
+            "Pokedex Notebook"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Pikachu Plushie, Pokedex Notebook",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.08,
+          "confidence": 0.9090909090909091,
+          "lift": 1.241927471435668,
+          "leverage": 0.015584,
+          "conviction": 2.947999999999999,
+          "score": 0.6440218579234973,
+          "promoCode": "POKEBOOS124",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Pikachu Plushie|Pokedex Notebook=>Booster Pack (Scarlet & Violet)"
+        }
+      ],
+      "topRuleSignature": "Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+    },
+    "iteration_2": {
+      "name": "Iteration 2: Mid-Season Update",
+      "range": {
+        "min_id": 1,
+        "max_id": 1000
+      },
+      "topRules": [
+        {
+          "rank": 1,
+          "antecedentItems": [
+            "Pikachu Plushie"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Pikachu Plushie",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.674,
+          "confidence": 0.9010695187165776,
+          "lift": 1.2209614074750375,
+          "leverage": 0.12197600000000008,
+          "conviction": 2.6483243243243257,
+          "score": 0.8742200889816385,
+          "promoCode": "POKEBOOS122",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+        },
+        {
+          "rank": 2,
+          "antecedentItems": [
+            "Pikachu Plushie",
+            "Pokedex Notebook"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Pikachu Plushie, Pokedex Notebook",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.081,
+          "confidence": 0.8901098901098901,
+          "lift": 1.206110962208523,
+          "leverage": 0.013842000000000007,
+          "conviction": 2.384199999999999,
+          "score": 0.6296661484856607,
+          "promoCode": "POKEBOOS121",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Pikachu Plushie|Pokedex Notebook=>Booster Pack (Scarlet & Violet)"
+        },
+        {
+          "rank": 3,
+          "antecedentItems": [
+            "Bulbasaur Succulent Planter",
+            "Pikachu Plushie"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Bulbasaur Succulent Planter, Pikachu Plushie",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.095,
+          "confidence": 0.8796296296296297,
+          "lift": 1.1919100672488208,
+          "leverage": 0.015296000000000004,
+          "conviction": 2.1766153846153853,
+          "score": 0.6282338653016161,
+          "promoCode": "POKEBOOS119",
+          "promoDiscount": 10,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Bulbasaur Succulent Planter|Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+        }
+      ],
+      "topRuleSignature": "Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+    },
+    "iteration_3": {
+      "name": "Iteration 3: Full Holiday Trend",
+      "range": {
+        "min_id": 1,
+        "max_id": 2000
+      },
+      "topRules": [
+        {
+          "rank": 1,
+          "antecedentItems": [
+            "Pokedex Notebook"
+          ],
+          "consequentItems": [
+            "Pikachu Hoodie"
+          ],
+          "antecedent": "Pokedex Notebook",
+          "consequent": "Pikachu Hoodie",
+          "support": 0.474,
+          "confidence": 0.8626023657870792,
+          "lift": 1.5712247099946797,
+          "leverage": 0.17232449999999994,
+          "conviction": 3.282443708609271,
+          "score": 0.8488858883137675,
+          "promoCode": "POKEPIKA157",
+          "promoDiscount": 20,
+          "collectorThemeEligible": false,
+          "highlyStable": true,
+          "ruleSignature": "Pokedex Notebook=>Pikachu Hoodie"
+        },
+        {
+          "rank": 2,
+          "antecedentItems": [
+            "Pikachu Plushie"
+          ],
+          "consequentItems": [
+            "Booster Pack (Scarlet & Violet)"
+          ],
+          "antecedent": "Pikachu Plushie",
+          "consequent": "Booster Pack (Scarlet & Violet)",
+          "support": 0.3425,
+          "confidence": 0.7837528604118993,
+          "lift": 1.8100527954085435,
+          "leverage": 0.15327900000000003,
+          "conviction": 2.6219999999999994,
+          "score": 0.8125117032464684,
+          "promoCode": "POKEBOOS181",
+          "promoDiscount": 20,
+          "collectorThemeEligible": true,
+          "highlyStable": true,
+          "ruleSignature": "Pikachu Plushie=>Booster Pack (Scarlet & Violet)"
+        },
+        {
+          "rank": 3,
+          "antecedentItems": [
+            "Graded Charizard Card",
+            "Poke Ball Pen Set",
+            "Pokedex Notebook"
+          ],
+          "consequentItems": [
+            "Pikachu Hoodie"
+          ],
+          "antecedent": "Graded Charizard Card, Poke Ball Pen Set, Pokedex Notebook",
+          "consequent": "Pikachu Hoodie",
+          "support": 0.0105,
+          "confidence": 0.9545454545454546,
+          "lift": 1.7386984600099353,
+          "leverage": 0.0044610000000000006,
+          "conviction": 9.922000000000008,
+          "score": 0.7337578738201689,
+          "promoCode": "POKEPIKA174",
+          "promoDiscount": 20,
+          "collectorThemeEligible": true,
+          "highlyStable": false,
+          "ruleSignature": "Graded Charizard Card|Poke Ball Pen Set|Pokedex Notebook=>Pikachu Hoodie"
+        }
+      ],
+      "topRuleSignature": "Pokedex Notebook=>Pikachu Hoodie"
+    }
+  },
+  "comparisonIteration1Vs3": {
+    "iteration1TopRule": "Pikachu Plushie=>Booster Pack (Scarlet & Violet)",
+    "iteration3TopRule": "Pokedex Notebook=>Pikachu Hoodie",
+    "topRuleChanged": true
+  }
+}

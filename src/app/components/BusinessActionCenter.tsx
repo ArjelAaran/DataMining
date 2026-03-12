@@ -16,11 +16,6 @@ interface PromoCampaign {
   discountPercent: number;
 }
 
-function buildPromoCode(rule: AnalysisRule): string {
-  const prefix = rule.consequent.replace(/[^A-Za-z0-9]/g, '').toUpperCase().slice(0, 4) || 'ITEM';
-  return `POKE${prefix}${Math.round(rule.lift * 100)}`;
-}
-
 export function BusinessActionCenter({ iteration, analysis, loading }: BusinessActionCenterProps) {
   const [campaign, setCampaign] = useState<PromoCampaign | null>(null);
   const [actionError, setActionError] = useState<string | null>(null);
@@ -35,7 +30,13 @@ export function BusinessActionCenter({ iteration, analysis, loading }: BusinessA
     const rule = getHighestLiftRuleFromBackend(currentIteration);
     if (!rule) { setActionError('NO RULE FOUND — run main_engine.py first.'); return; }
     setActionError(null);
-    setCampaign({ antecedent: rule.antecedent, consequent: rule.consequent, lift: rule.lift, code: buildPromoCode(rule), discountPercent: rule.lift > 1.5 ? 20 : 10 });
+    setCampaign({
+      antecedent: rule.antecedent,
+      consequent: rule.consequent,
+      lift: rule.lift,
+      code: rule.promoCode,           // ← use JSON value directly
+      discountPercent: rule.promoDiscount,  // ← use JSON value directly
+    });
   };
 
   return (

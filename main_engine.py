@@ -283,11 +283,18 @@ def analyze_iteration(
             min_threshold=1.0,
         )
         if not stable_rules_df.empty:
+            stable_rules_df["score"] = (
+                (stable_rules_df["support"]    * 0.4)
+                + (stable_rules_df["confidence"] * 0.4)
+                + (stable_rules_df["lift"]       * 0.2)
+            )
+
             stable_item_support = {
                 list(row["itemsets"])[0]: float(row["support"])
                 for _, row in stable_itemsets.iterrows()
                 if len(row["itemsets"]) == 1
             }
+
             stable_rules_df = pick_canonical_direction(
                 stable_rules_df, stable_item_support
             )
@@ -307,7 +314,7 @@ def analyze_iteration(
 
         lift_value     = float(row["lift"])
         conviction     = row.get("conviction", float("nan"))
-        promo_discount = 30 if lift_value > 1.5 else 10
+        promo_discount = 20 if lift_value > 1.5 else 10
         con_prefix     = "".join(c for c in consequent.upper() if c.isalnum())[:4]
         promo_code     = f"POKE{con_prefix}{int(round(lift_value * 100))}"
         weighted_score = float(row["score"])

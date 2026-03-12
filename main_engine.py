@@ -3,7 +3,7 @@ import math
 from datetime import datetime, timezone
 from pathlib import Path
 
-import pandas as pd
+import pandas as pd 
 from mlxtend.frequent_patterns import association_rules, fpgrowth
 
 DATA_FILE = Path(__file__).resolve().parent / "data" / "transactions.json"
@@ -243,8 +243,6 @@ def analyze_iteration(
         + (rules["lift"]       * 0.2)
     )
 
-    # ── Step 8: Canonical direction deduplication ──────────────────────────
-    # Build item-level individual support from single-item frequent sets.
     item_support = {
         list(row["itemsets"])[0]: float(row["support"])
         for _, row in frequent_itemsets.iterrows()
@@ -309,7 +307,7 @@ def analyze_iteration(
 
         lift_value     = float(row["lift"])
         conviction     = row.get("conviction", float("nan"))
-        promo_discount = 20 if lift_value > 1.5 else 10
+        promo_discount = 30 if lift_value > 1.5 else 10
         con_prefix     = "".join(c for c in consequent.upper() if c.isalnum())[:4]
         promo_code     = f"POKE{con_prefix}{int(round(lift_value * 100))}"
         weighted_score = float(row["score"])
